@@ -7,21 +7,24 @@
 	  }
 	],
 	"routes": [
+	{
+		"handle": "filesystem"
+	},
 	  {
 		"src": "/api/menu",
-		"dest": "/menu"
+		"dest": "api/menu.js"
 	  },
 	  {
 		"src": "/api/categories",
-		"dest": "/categories"
+		"dest": "api/categories.js"
 	  },
 	  {
-		"src": "/api/menu/:category",
-		"dest": "/index.js"
+		"src": "/api/menu/(.*)",
+		"dest": "/api/menu/[id].js"
 	  },
 	  {
-		"src": "/api/menu/:category/:product",
-		"dest": "/index.js"
+		"src": "/api/menu/(.*)/(.*)",
+		"dest": "/api/menu/[id]/[id].js"
 	  },
 	  {
 		"src": "/api/(.*)",
