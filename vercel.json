@@ -8,27 +8,8 @@
 	],
 	"routes": [
 		{
-			"handle": "filesystem"
-		},
-		{
-			"src": "/api/menu",
-			"dest": "api/menu.js"
-		},
-		{
-			"src": "/api/categories",
-			"dest": "api/categories.js"
-		},
-		{
-			"src": "/api/menu/(.*)",
-			"dest": "/api/menu/[id].js"
-		},
-		{
-			"src": "/api/menu/(.*)/(.*)",
-			"dest": "/api/menu/[id]/[id].js"
-		},
-		{
-			"src": "/api/(.*)",
-			"dest": "/index.js"
+			"src": "/(.*)",
+			"dest": "/"
 		}
 	]
 }
