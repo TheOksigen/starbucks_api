@@ -8,24 +8,24 @@
 	],
 	"routes": [
 	  {
-		"src": "/menu",
+		"src": "/api/menu",
 		"dest": "/menu"
 	  },
 	  {
-		"src": "/categories",
+		"src": "/api/categories",
 		"dest": "/categories"
 	  },
 	  {
-		"src": "/menu/:category",
+		"src": "/api/menu/:category",
 		"dest": "/index.js"
 	  },
 	  {
-		"src": "/menu/:category/:product",
+		"src": "/api/menu/:category/:product",
 		"dest": "/index.js"
 	  },
 	  {
 		"src": "/api/(.*)",
-		"dest": "index.js"
+		"dest": "/index.js"
 	  }
 	]
   }
